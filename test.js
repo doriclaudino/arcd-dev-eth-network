@@ -2,7 +2,7 @@ const { spawn } = require("child_process");
 const test = require("tape");
 
 // Start the app
-const env = Object.assign({}, process.env, { PORT: 5000 });
+const env = Object.assign({}, process.env, { RPC_PORT: 5000 });
 
 //spawn the network on port 5000
 const child = spawn("node", ["index.js"], { env });
