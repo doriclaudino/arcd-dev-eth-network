@@ -2,13 +2,13 @@ const { spawn } = require("child_process");
 const test = require("tape");
 
 // Start the app
-const env = Object.assign({}, process.env, { RPC_PORT: 5000 });
+const env = Object.assign({}, process.env, { PORT: 5000 });
 
 //spawn the network on port 5000
 const child = spawn("node", ["index.js"], { env });
 
 test("responds created accounts", (t) => {
-  //fail if 2 asserts or more was executed
+  //fail if 1 asserts or more was executed
   t.plan(2);
 
   // Wait until the server is ready

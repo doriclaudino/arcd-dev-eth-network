@@ -1,12 +1,11 @@
 const test = require("tape");
 const Web3 = require("web3");
-const port = 42880
 
 test("responds created accounts", (t) => {
   //fail if 2 asserts or more was executed
-  t.plan(2);
+  t.plan(1);
 
-  let publicUrl = `https://arcd-dev-eth-network.herokuapp.com:${port}`;
+  let publicUrl = `http://arcd-dev-eth-network.herokuapp.com/`;
   let web3 = new Web3(publicUrl);
 
   (async () => {

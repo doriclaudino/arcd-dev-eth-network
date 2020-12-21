@@ -9,7 +9,7 @@
   "scripts": {
     "start": "node index.js",
     "test": "node test.js",
-    "testWeb3": "node ./web3-test-rpc.js"
+    "test-heroku": "node test-heroku.js"
   },
   "dependencies": {
     "ganache-cli": "^6.12.1"

@@ -18,6 +18,6 @@ server.listen(port, function (err, blockchain) {
     console.log(Object.keys(accounts));
     console.log(`Ethereum running`);
     console.log(`\t local: http://127.0.0.1:${port}`);
-    console.log(`\t public: http://${projectName}.${hostname}:${port}`);
+    console.log(`\t public: https://${projectName}.${hostname}.com`);
   }
 });
