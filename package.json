@@ -1,0 +1,33 @@
+{
+  "name": "arcd-dev-eth-network",
+  "version": "0.0.1",
+  "description": "Private Ethereum network for ARCD dev",
+  "engines": {
+    "node": "12.x"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node test.js",
+    "testWeb3": "node ./web3-test-rpc.js"
+  },
+  "dependencies": {
+    "ganache-cli": "^6.12.1"
+  },
+  "devDependencies": {
+    "tape": "^4.7.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/doriclaudino/arcd-dev-eth-network"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "blockchain",
+    "eth",
+    "ethereum",
+    "arcd"
+  ],
+  "license": "MIT"
+}
