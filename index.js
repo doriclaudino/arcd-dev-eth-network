@@ -2,7 +2,7 @@ const ganache = require("ganache-cli");
 const package = require("./package.json");
 const hostname = "herokuapp";
 const projectName = package.name;
-const port = process.env.RPC_PORT || 8545;
+const port = process.env.PORT || 8545;
 const network_id = process.env.NETWORK_ID || 6969;
 
 const server = ganache.server({
